@@ -1,0 +1,29 @@
+<?php
+
+include __DIR__.'/../includes/includes.php';
+
+$tlg = new Telegram (TOKEN_BOT);
+
+$tlg->sendMessage ([
+'chat_id' => '@chatrecebersms',
+'text' => "<b>🤓 RECEBA SMS COM NÚMEROS NOVOS PARA CRIAR CONTAS</b>
+
+- Telegram
+- Whatsapp
+- 99app
+- Banqi
+- Uber
+- E muitos outros...
+
+💬 Receba os códigos no nosso bot
+@JPK_SMS_BOT
+
+🌐 Canal de Referências
+@JPKSMSBOTCANAL
+📍 Nosso Canal
+@JPKSMSBOTCANAL
+
+*Preço e serviço incomparável com os existentes.
+*Mais de 4 mil números disponíveis",
+'parse_mode' => 'html'
+]);
